@@ -1,0 +1,10 @@
+@use "../abstracts/" as vars;
+
+button{
+    background: vars.$main-clr;
+    border: none;
+    font-size: .7rem;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #E9E9E9;
+}

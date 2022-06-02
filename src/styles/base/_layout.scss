@@ -1,0 +1,155 @@
+/*===========================================
+================ CHUNK: BASE/LAYOUT
+===========================================*/
+@use "../abstracts/" as vars;
+
+
+header{
+    padding: 20px 0;
+    background: vars.$second-clr;
+    color: #E9E9E9;
+
+    ul{
+        display: flex;
+        justify-content: right;
+        padding: initial;
+    }
+
+    li{
+        
+        list-style: none;
+        font-size: .9rem;
+        &:nth-of-type(n+2){
+            margin-left: 20px;
+        }
+
+        &.logo{
+            font-size: 1.4rem;
+            margin-right: auto;
+        }
+    }
+}
+
+
+section.hero {
+    background-color: vars.$second-clr;
+    color: #E9E9E9;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        
+        > div{
+            flex: 1;
+        }
+    
+        .left{
+            h1{
+                max-width: 300px;
+            }
+
+            button{
+                width: auto;
+            }
+        }
+    
+        .right{
+            background-color: rgba(200, 200, 200, .3);
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+}
+
+section.cards{
+    padding: 40px 0;
+
+    h2{
+        color: vars.$second-clr;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-evenly;
+
+        > div{
+            width: 130px;
+            .card{
+                border: 2px solid vars.$main-clr;
+                border-radius: 8px;
+                height: 130px;
+            }
+
+            p{
+                margin-top: 10px;
+                color: #888;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+section.quote{
+    background-color: #E9E9E9;
+    color: #555;
+    padding: 40px 0;
+
+    .container{
+        max-width: 600px;
+    }
+
+    p{
+        font-style: italic;
+        color: #777;
+        &.author{
+            max-width: initial;
+            text-align: right;
+            font-weight: bold;
+            color: #555;
+        }
+    }
+}
+
+.cta-container{
+    padding: 40px 0;
+
+    section.call-to-action{
+        border-radius: 10px;
+        padding: 40px 90px;
+        background-color: vars.$main-clr;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content{
+            h2{
+                margin: 0;
+            }
+            p{margin: 10px 0 0 0;}
+            color: #E9E9E9;
+        }
+
+        button{
+            border: 1px solid #E9E9E9;
+            width: 100px;
+        }
+    }
+}
+
+
+footer{
+    background-color: vars.$second-clr;
+    padding: 20px 0;
+    color: #E9E9E9;
+    text-align: center;
+
+    p{
+        margin: 0;
+        max-width: initial;
+    }
+}
